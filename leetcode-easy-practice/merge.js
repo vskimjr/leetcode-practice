@@ -4,6 +4,8 @@
  * @param {number[]} nums2
  * @param {number} n
  * @return {void} Do not return anything, modify nums1 in-place instead.
+ *
+ * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/?envType=study-plan-v2&envId=top-interview-150
  */
 function merge (nums1, m, nums2, n) {
   const maxLength = m + n;
