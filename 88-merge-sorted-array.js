@@ -27,6 +27,13 @@ function merge(nums1, m, nums2, n){
     if (nums1[i] > nums2[j]){
       nums1[k] = nums1[i];
       i--;
+    } else if (nums1[i] === nums2[j]){
+      nums1[k] = nums1[i];
+      i--;
+      k--;
+      nums1[k] = nums2[j];
+      j--;
+      k--
     } else {
       nums1[k] = nums2[j];
       j--;
@@ -39,8 +46,5 @@ function merge(nums1, m, nums2, n){
     j--;
     k--;
   }
-
-
-
 
 }
